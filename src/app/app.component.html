@@ -1,4 +1,8 @@
-<div *ngFor="let key of keys">
-    <app-square value={{key.value}} (event)="onEvent($event)"></app-square>
+<div id="calc-container">
+    <div id="screen">
+        <div id="formula">{{inputFormula.join(' ')}}</div>
+        <div id="display">{{display}}</div>
+    </div>
+    <app-square *ngFor="let key of keys" id={{key.id}} value={{key.value}} (event)="onEvent($event)"></app-square>
 </div>
 <router-outlet></router-outlet>
