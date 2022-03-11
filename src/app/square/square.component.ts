@@ -5,8 +5,7 @@ import { Component, Input, EventEmitter, Output} from '@angular/core';
   template: `
     <button type='button' (click)='event.emit(value)'>{{value}}</button>
   `,
-  styles: [
-  ]
+  styleUrls: ['./square.component.css']
 })
 export class SquareComponent {
 
